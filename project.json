@@ -47,7 +47,10 @@
 
   "publishOptions": {
     "include": [
+      "pages",
+      "testimonials",
       "wwwroot",
+      "settings.json",
       "web.config"
     ]
   },
