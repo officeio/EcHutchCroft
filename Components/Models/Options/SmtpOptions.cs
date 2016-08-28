@@ -1,7 +1,7 @@
 ﻿using MailKit.Security;
 using System.Collections.Generic;
 
-namespace OfficeIO.EcHutchCroft.Website.Models.Options
+namespace OfficeIO.EcHutchCroft.Website.Components.Models.Options
 {
     public class SmtpOptions
     {

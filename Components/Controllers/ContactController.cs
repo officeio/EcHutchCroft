@@ -2,11 +2,11 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 using MimeKit;
-using OfficeIO.EcHutchCroft.Website.Models.Options;
+using OfficeIO.EcHutchCroft.Website.Components.Models.Options;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace OfficeIO.EcHutchCroft.Website.Controllers
+namespace OfficeIO.EcHutchCroft.Website.Components.Controllers
 {
     public class ContactController : Controller
     {
@@ -24,7 +24,7 @@ namespace OfficeIO.EcHutchCroft.Website.Controllers
         [HttpGet("~/Contact")]
         public IActionResult ServeContactPage()
         {
-            return View("~/Views/Contact.cshtml");
+            return View("Contact");
         }
 
         [HttpPost("~/Contact")]
@@ -59,7 +59,7 @@ namespace OfficeIO.EcHutchCroft.Website.Controllers
 
             }
 
-            return View("~/Views/Contact.cshtml");
+            return View("Contact");
         }
     }
 }

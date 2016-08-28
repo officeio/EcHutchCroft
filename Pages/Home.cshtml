@@ -1,4 +1,5 @@
-﻿@{
+﻿@model HomeModel
+@{
     ViewData["Title"] = "Home";
 }
 <div class="page home-page">
@@ -58,10 +59,38 @@
 
                 </p>
 
-
-
             </div>
 
+
+        </div>
+
+    </div>
+
+    <div class="container testimonial-section">
+
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <br />
+                <h2>What people are saying</h2>
+                <br />
+            </div>
+        </div>
+
+        <div class="row">
+
+            @foreach (var testimonial in Model.Testimonials) {
+
+                <div class="col-sm-6">
+
+                    <div class="testimonial-entry">
+
+                        @Html.Raw(testimonial.Content)
+
+                    </div>
+
+                </div>
+
+            }
 
         </div>
 

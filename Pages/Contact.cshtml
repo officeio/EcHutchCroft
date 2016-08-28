@@ -1,0 +1,115 @@
+﻿@{
+    ViewData["Title"] = "Contact";
+}
+@section head {
+    <script type="text/javascript" src="~/js/contactForm.js"></script>
+}
+<div class="page contact-page">
+
+    <div class="container section">
+
+        <div class="row">
+
+            <div class="col-sm-offset-1 col-sm-10">
+
+                <br />
+
+                <h1>Contact Edward</h1>
+
+                <br />
+
+                <p>
+                    Please don't hesitate to send me a message.
+
+                    Ask me a question, give your feedback of the book, this website.
+
+                    ... or even if you'd just like to share your experience.
+                </p>
+
+                <br />
+                <br />
+
+                <form id="contactForm"
+                        method="post"
+                        class="form-horizontal"
+                        action="~/Contact"
+                        role="form">
+
+                    <div class="form-group">
+
+                        <label class="control-label col-sm-3">
+                            Name
+                        </label>
+
+                        <div class="col-sm-7">
+                            <input class="form-control" 
+                                    type="text" name="name" />
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label class="control-label col-sm-3">
+                            Email
+                        </label>
+
+                        <div class="col-sm-7">
+                            <input class="form-control col-sm-7"
+                                    type="text" name="email" />
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label class="control-label col-sm-3">
+                            Message
+                        </label>
+
+                        <div class="col-sm-7">
+
+                            <textarea class="form-control col-sm-7"
+                                        rows="10"
+                                        name="message"></textarea>
+
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+
+                        <div class="col-sm-offset-3 col-sm-7">
+
+                            <button id="sendEmail"
+                                    class="btn btn-primary col-sm-5">
+                                Send
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </form>
+
+                <div class="alert alert-success"
+                        style="display: none"
+                        id="successAlert">
+
+                    Thanks for the message, I'll look forward to reading it.
+
+                </div>
+
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

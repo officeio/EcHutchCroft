@@ -1,4 +1,4 @@
-﻿namespace OfficeIO.EcHutchCroft.Website.Models.Options
+﻿namespace OfficeIO.EcHutchCroft.Website.Components.Models.Options
 {
     public class SmtpAddressOptions
     {

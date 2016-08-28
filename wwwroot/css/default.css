@@ -149,7 +149,7 @@ body .home-page .current-book-section {
   padding-bottom: 40px;
 }
 body .home-page .current-book-section .current-book-section-background {
-  /* background: url(../../images/stange-doings-at-nadgewicke-background.jpg) white;
+  /* background: url(../../Components/images/stange-doings-at-nadgewicke-background.jpg) white;
                 background-size: 100% 100%;*/
   opacity: 0.5;
   position: absolute;
@@ -206,6 +206,18 @@ body .home-page .character-section h3 {
 }
 body .home-page .character-section .character-text {
   text-align: left;
+}
+body .home-page .testimonial-section {
+  background-color: black;
+  color: white;
+}
+body .home-page .testimonial-section .testimonial-entry {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+}
+body .home-page .testimonial-section .testimonial-entry p {
+  font-size: 14px;
 }
 body .home-page .author-section {
   background-color: #63b089;
