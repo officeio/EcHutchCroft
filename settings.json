@@ -1,0 +1,19 @@
+﻿{
+  "Smtp": {
+    "Hostname": "smtp-relay.gmail.com",
+    "Port": 587,
+    "Secure": "StartTls",
+    "From": [
+      {
+        "Name": "Website Visitor",
+        "Address": "visitor@echutchcroft.com"
+      }
+    ],
+    "To": [
+      {
+        "Name": "James Harrison",
+        "Address": "james@officeio.com"
+      }
+    ]
+  }
+}
