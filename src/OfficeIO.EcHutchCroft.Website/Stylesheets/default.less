@@ -1,0 +1,418 @@
+html, body, p, td, li {
+    // font-family: 'Lora';
+    font-family: 'Open Sans';
+    font-size: 18px;
+}
+
+button {
+    font-family: 'Open Sans';
+}
+
+.btn {
+    border-radius: 2px;
+}
+
+body {
+    background-color: #094f2e;
+    background: linear-gradient(#80a183 0%, #094f2e 100%);
+
+    .navbar-inverse .navbar-nav > li > a {
+        color: #ccc;
+        text-transform: uppercase;
+        font-size: 14px;
+    }
+
+    .navbar {
+        border-radius: 0;
+        background-color: black;
+        margin-bottom: 0;
+        box-shadow: 0px 2px 15px rgba(0,0,0,0.4);
+        
+        .social-section {
+            position: absolute;
+            padding-top: 6px;
+            left: -50px;
+            img {
+                opacity: 0.5;
+                margin-bottom: 10px;
+                cursor: pointer;
+                width: 34px;
+                height: 34px;
+                display: block;
+                
+                &:hover {
+                    opacity: 1.0;
+                }
+            }
+        }
+
+        ul.navbar-right {
+            padding-right: 20px;
+
+            a {
+                font-family: 'Open Sans';
+            }
+        }
+
+        .navbar-brand {
+            color: white;
+            font-family: 'EB Garamond';
+            white-space: nowrap;
+            text-transform: none;
+            font-variant: small-caps;
+
+            &.visible-xs {
+                font-size: 25px;
+                margin-left: 15px;
+            }
+
+            &.hidden-xs {
+                font-size: 55px;
+                margin-top: 40px;
+                margin-bottom: 40px;
+                margin-left: 20px;
+            }
+        }
+    }
+
+    .footer {
+        background: black;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 50px;
+        padding-right: 50px;
+        box-shadow: 0px 2px 15px rgba(0,0,0,0.4);
+        
+        .social-section {
+            margin-bottom: 20px;
+            
+            img {
+                opacity: 0.5;
+                margin-right: 7px;
+                cursor: pointer;
+                width: 34px;
+                height: 34px;
+                
+                &:hover {
+                    opacity: 1.0;
+                }
+            }
+            
+        }
+
+        .brand-section {
+            font-family: 'EB Garamond';
+            font-size: 36px;
+            color: white;
+            vertical-align: middle;
+            font-variant: small-caps;
+            white-space: nowrap;
+        }
+
+        .menu-section {
+            vertical-align: middle;
+            padding-top: 20px;
+
+            a {
+                color: #ccc;
+                text-transform: uppercase;
+                margin-left: 20px;
+                font-size: 14px;
+                font-family: 'Open Sans';
+
+                &:hover {
+                    color: #eee;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .disclaimer {
+        color: #666;
+        font-size: 13px;
+        font-family: 'Open Sans';
+        font-weight: 600;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+        span {
+            white-space: nowrap;
+        }
+    }
+    
+    .page {
+        
+        .section {
+            background-color: white;
+        }
+        
+        h1, h2, h3, h4, h5 {
+            font-family: 'Segoe UI', 'Open Sans';
+            font-weight: lighter;
+        }
+        
+        h1 {
+            font-size: 42px;
+        }
+        
+        p {
+            font-family: 'Segoe UI', 'Open Sans';
+        }
+        
+    }
+
+    .home-page {
+
+        .current-book-section {
+            background-color: white;
+            box-shadow: 0px -10px 15px rgba(0,0,0,0.4);
+            position: relative;
+            z-index: 1;
+            padding-top: 40px;
+            padding-left: 40px;
+            padding-right: 40px;
+            padding-bottom: 40px;
+            
+            .current-book-section-background {
+                /* background: url(../images/stange-doings-at-nadgewicke-background.jpg) white;
+                background-size: 100% 100%;*/
+                opacity: 0.5;
+                position: absolute;
+                z-index: -1;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;             
+            }
+            
+            h1 {
+                text-align: center;
+                font-family: 'Times New Roman';
+                font-size: 36px;
+                color:  rgba(0,0,0,0.7);
+                text-transform: uppercase;
+                font-weight: bold;
+                text-shadow: inset 0px 2px 2px rgba(0,0,0,0.3);
+
+            }
+            
+            .btn {
+                margin-top: 10px;
+                margin-bottom: 20px;
+            }
+
+            .thumbnail {
+                border: none;
+                background: none;
+
+                img {
+                    box-shadow: 0px 0px 20px rgba(0,0,0,0.4);
+                }
+            }
+
+            .book-description {
+
+                .book-description-text {
+                    text-align: left;
+                }
+                
+            }
+            
+        }
+        
+        .character-section {
+            background-color: #333;
+            color: white;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            background: linear-gradient(#222 0%, #333 10%, #222 100%);
+            
+            .character-photo {
+                text-align: center;
+                margin-bottom: 20px;
+                div {
+                    display: inline-block;
+                    width: 220px;
+                    height: 350px;
+                    box-shadow: 0 0 15px rgba(0,0,0,0.7);
+                    background: white;
+                }
+            }
+            
+            h3 {
+                margin-top:  0;
+                margin-bottom: 30px;
+            }
+            
+            .character-text {
+                text-align: left;
+            }
+                
+        }
+        
+        .author-section {
+            background-color: #63b089;
+            background: linear-gradient(#56946a 0%, #63b089 33%);
+            color: rgba(0,0,0,0.7);
+            padding-top: 30px;
+            padding-bottom: 30px;
+            box-shadow: 0px -10px 15px rgba(0,0,0,0.4), inset 0px -5px 20px rgba(0,0,0,0.4);
+            
+            h2 {
+                font-family: 'Times New Roman';
+                font-size: 36px;
+                color:  rgba(0,0,0,0.5);
+                text-transform: uppercase;
+                font-weight: bold;
+                text-shadow: inset 0px 2px 2px rgba(0,0,0,0.3);
+            }
+            
+            .photo-part {
+                text-align: center;
+            
+                .thumbnail {
+                    background: transparent;
+                    border: none;
+                    width: 100%;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                
+            }
+            
+            p {
+                
+            }
+        }
+    }
+
+    .contact-page {
+
+    }
+}
+
+@media (min-width: 990px) {
+    ul.navbar-right {
+        padding-top: 40px;
+        li a {
+            font-size: 16px !important;
+        }
+    }
+
+    .current-book-section {
+        h1 {
+            margin-top: 0;
+            font-size: 25px;
+        }
+        p {
+            font-size: 18px;
+        }
+    }
+
+    .author-section {
+
+        .photo-part {
+
+            .thumbnail {
+                width: 80% !important;
+            }
+            
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    ul.navbar-right {
+        padding-top: 40px;
+        li a {
+            font-size: 16px !important;
+        }
+    }
+
+    .current-book-section {
+        h1 {
+            margin-top: 0;
+            font-size: 28px;
+        }
+        p {
+            font-size: 18px;
+        }
+    }
+
+    .author-section {
+    
+        .thumbnail {
+            
+           
+        }
+    
+    }
+}
+
+@media (max-width: 990px) {
+    .current-book-section {
+        h1 {
+            margin-top: 0;
+            font-size: 22px;
+        }
+        p {
+            font-size: 15px;
+        }
+    }
+
+    .author-section {
+    
+        .thumbnail {
+            
+            width: 100% !important;
+            
+            
+        }
+    
+    }
+}
+
+@media (max-width: 768px) {
+    ul.navbar-right {
+        li a {
+            padding-left: 30px;
+        }
+    }
+    .footer {
+        padding-left: 30px !important;
+        padding-right: 30px !important;
+        
+        .brand-section {
+            text-align: center;
+        }
+        
+        .social-section {
+            text-align: center;
+        }
+        
+        .disclaimer {
+            text-align: center;
+        }
+    }
+    .current-book-section {
+        h1 {
+            margin-top: 0;
+            font-size: 25px;
+        }
+        p {
+            font-size: 18px;
+        }
+    }
+
+    .author-section {
+    
+        .thumbnail {
+            
+            width: 100% !important;
+            max-width: 440px;
+            
+        }
+    
+    }
+}

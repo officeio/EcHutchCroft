@@ -1,0 +1,309 @@
+﻿html,
+body,
+p,
+td,
+li {
+  font-family: 'Open Sans';
+  font-size: 18px;
+}
+button {
+  font-family: 'Open Sans';
+}
+.btn {
+  border-radius: 2px;
+}
+body {
+  background-color: #094f2e;
+  background: linear-gradient(#80a183 0%, #094f2e 100%);
+}
+body .navbar-inverse .navbar-nav > li > a {
+  color: #ccc;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+body .navbar {
+  border-radius: 0;
+  background-color: black;
+  margin-bottom: 0;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.4);
+}
+body .navbar .social-section {
+  position: absolute;
+  padding-top: 6px;
+  left: -50px;
+}
+body .navbar .social-section img {
+  opacity: 0.5;
+  margin-bottom: 10px;
+  cursor: pointer;
+  width: 34px;
+  height: 34px;
+  display: block;
+}
+body .navbar .social-section img:hover {
+  opacity: 1.0;
+}
+body .navbar ul.navbar-right {
+  padding-right: 20px;
+}
+body .navbar ul.navbar-right a {
+  font-family: 'Open Sans';
+}
+body .navbar .navbar-brand {
+  color: white;
+  font-family: 'EB Garamond';
+  white-space: nowrap;
+  text-transform: none;
+  font-variant: small-caps;
+}
+body .navbar .navbar-brand.visible-xs {
+  font-size: 25px;
+  margin-left: 15px;
+}
+body .navbar .navbar-brand.hidden-xs {
+  font-size: 55px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 20px;
+}
+body .footer {
+  background: black;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.4);
+}
+body .footer .social-section {
+  margin-bottom: 20px;
+}
+body .footer .social-section img {
+  opacity: 0.5;
+  margin-right: 7px;
+  cursor: pointer;
+  width: 34px;
+  height: 34px;
+}
+body .footer .social-section img:hover {
+  opacity: 1.0;
+}
+body .footer .brand-section {
+  font-family: 'EB Garamond';
+  font-size: 36px;
+  color: white;
+  vertical-align: middle;
+  font-variant: small-caps;
+  white-space: nowrap;
+}
+body .footer .menu-section {
+  vertical-align: middle;
+  padding-top: 20px;
+}
+body .footer .menu-section a {
+  color: #ccc;
+  text-transform: uppercase;
+  margin-left: 20px;
+  font-size: 14px;
+  font-family: 'Open Sans';
+}
+body .footer .menu-section a:hover {
+  color: #eee;
+  text-decoration: none;
+}
+body .disclaimer {
+  color: #666;
+  font-size: 13px;
+  font-family: 'Open Sans';
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+body .disclaimer span {
+  white-space: nowrap;
+}
+body .page .section {
+  background-color: white;
+}
+body .page h1,
+body .page h2,
+body .page h3,
+body .page h4,
+body .page h5 {
+  font-family: 'Segoe UI', 'Open Sans';
+  font-weight: lighter;
+}
+body .page h1 {
+  font-size: 42px;
+}
+body .page p {
+  font-family: 'Segoe UI', 'Open Sans';
+}
+body .home-page .current-book-section {
+  background-color: white;
+  box-shadow: 0px -10px 15px rgba(0, 0, 0, 0.4);
+  position: relative;
+  z-index: 1;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 40px;
+}
+body .home-page .current-book-section .current-book-section-background {
+  /* background: url(../../images/stange-doings-at-nadgewicke-background.jpg) white;
+                background-size: 100% 100%;*/
+  opacity: 0.5;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+body .home-page .current-book-section h1 {
+  text-align: center;
+  font-family: 'Times New Roman';
+  font-size: 36px;
+  color: rgba(0, 0, 0, 0.7);
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+body .home-page .current-book-section .btn {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+body .home-page .current-book-section .thumbnail {
+  border: none;
+  background: none;
+}
+body .home-page .current-book-section .thumbnail img {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+}
+body .home-page .current-book-section .book-description .book-description-text {
+  text-align: left;
+}
+body .home-page .character-section {
+  background-color: #333;
+  color: white;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background: linear-gradient(#222 0%, #333 10%, #222 100%);
+}
+body .home-page .character-section .character-photo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+body .home-page .character-section .character-photo div {
+  display: inline-block;
+  width: 220px;
+  height: 350px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+  background: white;
+}
+body .home-page .character-section h3 {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+body .home-page .character-section .character-text {
+  text-align: left;
+}
+body .home-page .author-section {
+  background-color: #63b089;
+  background: linear-gradient(#56946a 0%, #63b089 33%);
+  color: rgba(0, 0, 0, 0.7);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  box-shadow: 0px -10px 15px rgba(0, 0, 0, 0.4), inset 0px -5px 20px rgba(0, 0, 0, 0.4);
+}
+body .home-page .author-section h2 {
+  font-family: 'Times New Roman';
+  font-size: 36px;
+  color: rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+body .home-page .author-section .photo-part {
+  text-align: center;
+}
+body .home-page .author-section .photo-part .thumbnail {
+  background: transparent;
+  border: none;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 990px) {
+  ul.navbar-right {
+    padding-top: 40px;
+  }
+  ul.navbar-right li a {
+    font-size: 16px !important;
+  }
+  .current-book-section h1 {
+    margin-top: 0;
+    font-size: 25px;
+  }
+  .current-book-section p {
+    font-size: 18px;
+  }
+  .author-section .photo-part .thumbnail {
+    width: 80% !important;
+  }
+}
+@media (min-width: 1200px) {
+  ul.navbar-right {
+    padding-top: 40px;
+  }
+  ul.navbar-right li a {
+    font-size: 16px !important;
+  }
+  .current-book-section h1 {
+    margin-top: 0;
+    font-size: 28px;
+  }
+  .current-book-section p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 990px) {
+  .current-book-section h1 {
+    margin-top: 0;
+    font-size: 22px;
+  }
+  .current-book-section p {
+    font-size: 15px;
+  }
+  .author-section .thumbnail {
+    width: 100% !important;
+  }
+}
+@media (max-width: 768px) {
+  ul.navbar-right li a {
+    padding-left: 30px;
+  }
+  .footer {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+  }
+  .footer .brand-section {
+    text-align: center;
+  }
+  .footer .social-section {
+    text-align: center;
+  }
+  .footer .disclaimer {
+    text-align: center;
+  }
+  .current-book-section h1 {
+    margin-top: 0;
+    font-size: 25px;
+  }
+  .current-book-section p {
+    font-size: 18px;
+  }
+  .author-section .thumbnail {
+    width: 100% !important;
+    max-width: 440px;
+  }
+}
