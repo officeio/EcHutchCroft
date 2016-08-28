@@ -1,4 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using MailKit.Net.Smtp;
+using MailKit.Security;
+using Microsoft.AspNetCore.Mvc;
+using MimeKit;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace OfficeIO.EcHutchCroft.Website.Controllers
 {
@@ -16,29 +21,40 @@ namespace OfficeIO.EcHutchCroft.Website.Controllers
             return View("~/Views/Contact.cshtml");
         }
 
-        //[HttpPost("~/Contact")]
-        //public IActionResult SubmitContactPage()
-        //{
-        //    using (var smtpMail = new SmtpClient("smtp-relay.gmail.com", 587)) {
+        [HttpPost("~/Contact")]
+        public async Task<IActionResult> SubmitContactPageAsync(string name, string email, string message)
+        {
+            // Prepare the mail to send.
+            var mail = new MimeMessage();
+            mail.From.Add(new MailboxAddress("Website Visitor", "visitor@echutchcroft.com"));
+            mail.To.Add(new MailboxAddress("James Harrison", "james@officeio.com"));
+            mail.Subject = $"Website message from {name}";
+            mail.Body = new TextPart("plain") { Text = message };
+            mail.ReplyTo.Add(new MailboxAddress(name, email));
 
-        //        smtpMail.UseDefaultCredentials = false;
-        //        smtpMail.Credentials = new NetworkCredential("system@officeio.com", "System2015!");
-        //        smtpMail.EnableSsl = true;
+            using (var smtpMail = new SmtpClient()) {
 
-        //        var message = new MailMessage(
-        //            from: "visitor@echutchcroft.com",
-        //            to: "edward@echutchcroft.com",
-        //            subject: string.Format("Website message from {0}", Request["name"]),
-        //            body: Request["message"]);
+                // Connect to the server.
+                await smtpMail.ConnectAsync("smtp-relay.gmail.com", 587, SecureSocketOptions.StartTls);
 
-        //        message.ReplyToList.Add(new MailAddress(Request["email"], Request["name"]));
+                try {
 
-        //        smtpMail.Send(message);
+                    // Authenticate and send the mail.
+                    await smtpMail.AuthenticateAsync(Encoding.ASCII, "system@officeio.com", "System2015!");
+                    await smtpMail.SendAsync(mail);
 
-        //    }
+                }
+                finally {
 
-        //    return View("~/Views/Contact.cshtml");
-        //}
+                    // Disconnect regardless of error.
+                    await smtpMail.DisconnectAsync(true);
+
+                }
+
+            }
+
+            return View("~/Views/Contact.cshtml");
+        }
 
         [HttpGet("~/FAQ")]
         public IActionResult ServeFaqPage()
