@@ -216,6 +216,11 @@ body .home-page .testimonial-section .testimonial-entry {
   padding-right: 50px;
   padding-bottom: 50px;
 }
+body .home-page .testimonial-section .testimonial-entry blockquote {
+  border-left: 0;
+  text-indent: 30px;
+  padding: 0;
+}
 body .home-page .testimonial-section .testimonial-entry p {
   font-size: 14px;
 }
