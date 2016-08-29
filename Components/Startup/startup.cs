@@ -45,7 +45,7 @@ namespace OfficeIO.EcHutchCroft.Website.Components.Startup
             var builder = new ConfigurationBuilder()
                 .SetBasePath(env.ContentRootPath)
                 .AddJsonFile($"settings.json", optional: false, reloadOnChange: true)
-                .AddJsonFile($"../secrets.json", optional: true, reloadOnChange: true)
+                .AddJsonFile($"..\\secrets.json", optional: true, reloadOnChange: true)
                 .AddEnvironmentVariables();
 
             // Add secrets only for development.
