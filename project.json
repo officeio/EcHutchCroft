@@ -48,8 +48,8 @@
 
   "publishOptions": {
     "include": [
-      "pages",
-      "testimonials",
+      "Pages",
+      "Testimonials",
       "wwwroot",
       "settings.json",
       "project.json",
