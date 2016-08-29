@@ -41,11 +41,15 @@ namespace OfficeIO.EcHutchCroft.Website.Components.Startup
         /// </summary>
         public Startup(IHostingEnvironment env)
         {
+            // Workout the full secrets paths.
+            var secretsPath = Path.Combine(env.ContentRootPath, "..", "secrets.json");
+            var fullSecretsPath = Path.GetFullPath(secretsPath);
+
             // Build up the configuration from all the different sources.
             var builder = new ConfigurationBuilder()
+                .AddJsonFile(fullSecretsPath, optional: true, reloadOnChange: true)
                 .SetBasePath(env.ContentRootPath)
                 .AddJsonFile($"settings.json", optional: false, reloadOnChange: true)
-                .AddJsonFile($"..\\secrets.json", optional: true, reloadOnChange: true)
                 .AddEnvironmentVariables();
 
             // Add secrets only for development.
